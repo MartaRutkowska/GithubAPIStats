@@ -38,6 +38,7 @@ namespace GithubAPIStats.Services
             client.DefaultRequestHeaders.UserAgent.TryParseAdd("request");
             client.DefaultRequestHeaders.Accept.TryParseAdd("application/vnd.github.raw+json");
 
+            //paraller call for all files 
             var tasks = paths.Select(p => client.GetStringAsync($"{owner}/{repo}/contents/{p}"));
             var fileContents = await Task.WhenAll(tasks);
 
