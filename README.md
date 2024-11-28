@@ -13,7 +13,7 @@ If you exceed this limit you will be informed by the program.
 #### Gets statistics for chosen github repository
 
 ```http
-  GET https://localhost:7290/statistics?owner={owner}&repository={repository}
+  GET https://localhost/statistics?owner={owner}&repository={repository}
 
 ```
 
@@ -24,7 +24,7 @@ If you exceed this limit you will be informed by the program.
 
 Example of a call for a lodash repository:
 
-https://localhost:7290/statistics?owner=lodash&repository=lodash
+https://localhost/statistics?owner=lodash&repository=lodash
 
 
 
