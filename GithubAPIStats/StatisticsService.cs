@@ -1,7 +1,5 @@
 ﻿using GithubAPIStats.Services;
-using GithubAPIStats.Services.Models;
 using GithubAPIStats.Utils;
-using System.Text.RegularExpressions;
 
 namespace GithubAPIStats
 {
@@ -17,12 +15,12 @@ namespace GithubAPIStats
             if (fileContents == null) return [];
 
             var lettersDictionary = new Dictionary<char, long>();
-            foreach(var text in fileContents)
+            foreach (var text in fileContents)
             {
                 CharCountHelper.CountLetters(text, lettersDictionary);
             }
 
-            return lettersDictionary;
+            return lettersDictionary.OrderByDescending(x => x.Value).ToDictionary();
         }
 
         private async Task<List<string>> GetFilePaths(string owner, string repo)

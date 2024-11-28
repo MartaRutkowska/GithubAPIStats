@@ -1,6 +1,4 @@
-using GithubAPIStats;
 using GithubAPIStats.Utils;
-using System.Security.Cryptography.X509Certificates;
 
 namespace TestProject
 {
@@ -20,7 +18,7 @@ namespace TestProject
         [Fact]
         public void GetFilePathsWithExtenstionsTest()
         {
-            List<string> files = [ "aaa.txt", "b.js", "c.js", "sdkjfhsdf.o", "sfuye.ts" ];
+            List<string> files = ["aaa.txt", "b.js", "c.js", "sdkjfhsdf.o", "sfuye.ts"];
             Assert.Equal(FilePathHelper.GetFilePathsWithExtenstions(files), ["b.js", "c.js", "sfuye.ts"]);
         }
 

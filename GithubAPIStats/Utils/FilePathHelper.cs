@@ -1,5 +1,4 @@
-﻿using GithubAPIStats.Services.Models;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace GithubAPIStats.Utils
 {
