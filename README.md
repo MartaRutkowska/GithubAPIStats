@@ -1,9 +1,9 @@
 
 # GitHubApiStats
 
-Simple API endpoint that calculates occurences of each of the letters in a chosen public Github repository and presents them in decreasing order.
+Simple API endpoint that calculates occurences of letters in a chosen public Github repository and presents them in decreasing order.
 
-As program uses Github API so please be mindful that there is a limit on number of calls an unauthenticated user can make. 
+Program uses Github API -please be mindful that there is a limit on number of calls an unauthenticated user can make. 
 If you exceed this limit you will be informed by the program.
 
 
