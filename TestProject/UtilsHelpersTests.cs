@@ -8,6 +8,7 @@ namespace TestProject
         [InlineData("aaaabbbbcccc")]
         [InlineData("aaAAbbBBccCC")]
         [InlineData("--aaAA&&bb$%+BBcc==CC")]
+        [InlineData("--a{)-+++aAA&&bb$%+BBcc==CC*****%$#}{}123")]
         public void LettersCountTest(string text)
         {
             var lettersDict = new Dictionary<char, long>();
