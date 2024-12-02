@@ -1,5 +1,5 @@
-﻿using GithubAPIStats;
-using GithubAPIStats.Controllers;
+﻿using GithubAPIStats.Controllers;
+using GithubAPIStats.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;

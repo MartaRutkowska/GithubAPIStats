@@ -1,4 +1,4 @@
-﻿namespace GithubAPIStats
+﻿namespace GithubAPIStats.Services
 {
     public interface IStatisticsService
     {

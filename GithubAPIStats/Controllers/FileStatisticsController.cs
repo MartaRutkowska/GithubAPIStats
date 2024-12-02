@@ -1,3 +1,4 @@
+using GithubAPIStats.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GithubAPIStats.Controllers
@@ -9,7 +10,7 @@ namespace GithubAPIStats.Controllers
         private readonly IStatisticsService _statisticsService = statisticsService;
 
         /// <summary>
-        /// Returns occurences of letterns in descending order across all file found in a chosen repository.
+        /// Returns occurences of letterns in descending order across all files found in a chosen repository.
         /// </summary>
         /// <param owner="owner">Repository owner</param>
         /// <param repository="repository">Repository name</param>

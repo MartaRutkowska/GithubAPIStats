@@ -1,7 +1,6 @@
-﻿using GithubAPIStats.Services;
-using GithubAPIStats.Utils;
+﻿using GithubAPIStats.Utils;
 
-namespace GithubAPIStats
+namespace GithubAPIStats.Services
 {
     public class StatisticsService(IExternalService externalService) : IStatisticsService
     {

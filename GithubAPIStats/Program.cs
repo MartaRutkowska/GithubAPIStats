@@ -1,4 +1,3 @@
-using GithubAPIStats;
 using GithubAPIStats.Config;
 using GithubAPIStats.Services;
 using GithubAPIStats.Utils.Exceptions;
