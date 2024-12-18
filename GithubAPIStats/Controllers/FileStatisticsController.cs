@@ -12,8 +12,8 @@ namespace GithubAPIStats.Controllers
         /// <summary>
         /// Returns occurences of letterns in descending order across all files found in a chosen repository.
         /// </summary>
-        /// <param owner="owner">Repository owner</param>
-        /// <param repository="repository">Repository name</param>
+        /// <param name="owner"></param>
+        /// <param name="repository"></param>
         [HttpGet]
         public async Task<IActionResult> GetAsync(string owner, string repository)
         {
